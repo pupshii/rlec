@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียนเพื่อเข้าสู่ระบบ</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="global.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title title--small color-primary taL">ลงทะเบียนเพื่อเข้าสู่ระบบ</div>
+        <div class="subtitle taL size12">ลงทะเบียนเข้าสู่ระบบเพื่อใช้งานครั้งแรกของคุณ</div>
+        <form>
+            <div class="form-group">
+                <label for="username">ชื่อผู้ใช้งาน</label>
+                <input type="text" id="username" name="username" placeholder="กรุณากรอกชื่อผู้ใช้งาน">
+            </div>
+            <div class="form-group">
+                <label for="email">ที่อยู่อีเมล</label>
+                <input type="email" id="email" name="email" placeholder="กรุณากรอกที่อยู่อีเมล">
+            </div>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" name="password" placeholder="กรุณากรอกรหัสผ่าน">
+                <img src="images/eye.png" class="toggle-password" onclick="togglePasswordVisibility('password')" alt="Toggle visibility">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">ยืนยันรหัสผ่าน</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="กรุณากรอกยืนยันรหัสผ่าน">
+                <img src="images/eye.png" class="toggle-password" onclick="togglePasswordVisibility('confirm-password')" alt="Toggle visibility">
+            </div>
+            <div class="form-group">
+                <img src="captcha.png" alt="CAPTCHA">
+                <input type="text" id="captcha" name="captcha" placeholder="กรุณากรอกตัวอักษรที่เห็นในภาพ">
+            </div>
+            <div class="checkbox-form terms">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">กรุณาอ่านข้อตกลง ก่อนทำการยืนยันข้อตกลง</label>
+                <a href="#">อ่านข้อตกลง</a>
+            </div>
+            <button type="button" class="btn" onclick="nextPage('2.html')">ลงทะเบียน</button>
+        </form>
+    </div>
+    <script>
+        function togglePasswordVisibility(id) {
+            var input = document.getElementById(id);
+            if (input.type === "password") {
+                input.type = "text";
+            } else {
+                input.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

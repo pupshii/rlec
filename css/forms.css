@@ -1,0 +1,85 @@
+/* Form Group */
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #F5F7FB;
+    border-radius: 5px;
+    padding-right: 40px;
+}
+
+.form-group img.toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 18px;
+    height: 12px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #F5F7FB;
+    border-radius: 8px;
+}
+
+.input-container i {
+    font-size: 16px;
+    color: #4F83FF;
+    margin-right: 10px; /* Space between icon and input */
+}
+
+.input-container input {
+    border: none;
+    background: none;
+    background-color: #F5F7FB;
+    outline: none;
+    font-size: 12px;
+    color: #333;
+    flex-grow: 1;
+}
+
+.input-container input::placeholder {
+    color: #ccc; /* Placeholder color */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #F5F7FB;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.search-bar i {
+    color: #ccc;
+    font-size: 18px;
+}

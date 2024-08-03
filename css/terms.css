@@ -1,0 +1,18 @@
+/* Terms and Conditions */
+.terms {
+    display: flex;
+    align-items: center;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.terms label {
+    font-size: 10px;
+}
+
+.terms a {
+    font-size: 10px;
+    margin-left: 5px; 
+}

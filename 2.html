@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียนเพื่อเข้าสู่ระบบ</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="global.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title color-primary title--medium">ลืมรหัสผ่าน</div>
+        <div class="subtitle size12 ml20 mr20">หากท่านต้องการรีเซ็ตรหัสผ่านของคุณ ให้ป้อนที่อยู่อีเมลของ คุณที่ได้ทำการลงทะเบียนไว้เบื้องต้น</div>
+        <form>
+            <div class="form-group">
+                <div class="input-container">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="กรุณากรอกที่อยู่อีเมล">
+                </div>
+            </div>
+            
+            <button id="confirmButton" type="button" class="btn btn--small" onclick="handleButtonClick()">ยืนยัน</button>
+            <span class="textButton--hidden fwB"id="resendButton" onclick="handleResendClick()">
+                <i class="fas fa-redo"></i>Resend Email
+            </span>
+        </form>
+    </div>
+    <script>
+        function handleButtonClick() {
+            document.getElementById('confirmButton').style.display = 'none';
+            document.getElementById('resendButton').style.display = 'inline';
+        }
+
+        function handleResendClick() {
+            alert('Resend email clicked!');
+            nextPage('3.html')
+            // Add resend email here
+        }
+    </script>
+</body>
+</html>
