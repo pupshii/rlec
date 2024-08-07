@@ -28,6 +28,7 @@
     left: 0;
     z-index: 1000;
     transition: top 0.3s;
+    width: 100%;
 }
 
 /* Logo */
@@ -50,7 +51,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     padding: 0 0px; /* Adjust padding as needed */
 }
 
