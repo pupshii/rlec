@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: top 0.3s;
+    width: 100%;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.header-buttons .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    border: 1px solid #4F83FF;
+    border-radius: 50%;
+    color: #4F83FF;
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.header-buttons .btn img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.header-menu{
+    display: flex;
+}
+
+.header-menu .button {
+    display: flex;
+    border: none;
+}
+
+.header-menu .button img {
+    border-radius: 0%;
+    width: 22px;
+    height: 25px;
+}
+
+
+@media (max-width: 300px) {
+    .header {
+        display: none;
+    }
+}

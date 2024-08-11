@@ -1,0 +1,275 @@
+/* Global Styles */
+body {
+    font-family: Sarabun, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+/* Illustration */
+.illustration img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Title */
+.title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.title-primary {
+    color: #4F83FF;
+}
+
+.title-secondary {
+    color: #000000;
+}
+
+.size-big {
+    font-size: 34px;
+}
+
+.size-medium {
+    font-size: 28px;
+}
+
+.size-small {
+    font-size: 24px;
+}
+
+.size-xsmall {
+    font-size: 20px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+
+
+/* Form Group */
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #F5F7FB;
+    border-radius: 5px;
+    padding-right: 40px;
+}
+
+.form-group img.toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 18px;
+    height: 12px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #F5F7FB;
+    border-radius: 8px;
+}
+
+.input-container i {
+    font-size: 16px;
+    color: #4F83FF;
+    margin-right: 10px; /* Space between icon and input */
+}
+
+.input-container input {
+    border: none;
+    background: none;
+    background-color: #F5F7FB;
+    outline: none;
+    font-size: 12px;
+    color: #333;
+    flex-grow: 1;
+}
+
+.input-container input::placeholder {
+    color: #ccc; /* Placeholder color */
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4F83FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Link */
+.link {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.link a {
+    color: #4F83FF;
+    text-decoration: underline;
+}
+
+/* For Email Resend Button */
+.textButton {
+    display: none;
+    color: #4F83FF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.textButton i {
+    margin-right: 8px;
+}
+
+
+/* Terms and Conditions */
+.terms {
+    display: flex;
+    align-items: center;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.terms label {
+    font-size: 10px;
+}
+
+.terms a {
+    font-size: 10px;
+    margin-left: 5px; 
+}
+
+
+
+
+
+
+
+/* For replacing default checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F7FB;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Background color when active */
+input[type="checkbox"]:checked {
+    background-color: #4F83FF;
+    border: 1px solid #4F83FF;
+}
+
+/* Checkmark when active */
+input[type="checkbox"]:checked::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Checkbox */
+.checkbox-form {
+    margin-bottom: 15px;
+    position: relative;
+    text-align: left;
+}
+
+.checkbox-form input {
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    color: #F5F7FB;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Margin */
+.margin-small {
+    margin: 20px;
+}
