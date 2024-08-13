@@ -1,0 +1,796 @@
+/* Card Styles */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+    max-width: 300px;
+    margin: 5px auto;
+    margin-top: 5px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid rgba(245, 247, 251, 1);
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px 0px rgba(230, 230, 230, 0.4);
+    margin-bottom: 20px;
+    /* width: 320px;  */
+    height: 114px; 
+    overflow: hidden;
+}
+
+
+
+.card-header:not(:last-child),
+.card-body:not(:last-child),
+.card-footer:not(:last-child) {
+    border-bottom: 1px solid #E0E0E0; /* Add a light gray border */
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    height: 45%;
+}
+
+.card-header img {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    align-self: baseline;
+}
+
+.card-header-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.card-title {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;    /* Hide the overflowing text */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+    max-width: 100%;    /* Adjust based on your design */
+    margin-bottom: 5px;
+}
+
+.card-subtitle {
+    font-size: 8px;
+    color: #828282;
+    text-align: left;
+    margin-bottom: 2.5px;
+}
+
+.card-header-actions {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
+
+.card-header-actions .btn {
+    background-color: #D4FFEF;
+    color: #5EB594;
+    padding: 2.75px 16.75px;
+    border-radius: 3px;
+    font-size: 9px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    height: 16px;
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr; /* 4 equal-width columns */
+    grid-template-rows: repeat(2, 12px); /* 2 rows, height determined by content */
+    gap: 5px; /* Add some space between the grid items */
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.card-body .info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Optional: Align items to the start of the cell */
+}
+
+.card-body .info:nth-child(1) {
+    grid-column: 1 / 2; /* First column, first row */
+    grid-row: 1 / 2;
+}
+
+.card-body .info:nth-child(2) {
+    grid-column: 2 / 3; /* Second column, first row */
+    grid-row: 1 / 2;
+}
+
+.card-body .info:nth-child(3) {
+    grid-column: 3 / 4; /* Third column, first row */
+    grid-row: 1 / 2;
+}
+
+.card-body .info:nth-child(4) {
+    grid-column: 4 / 5; /* Fourth column, first row */
+    grid-row: 1 / 2;
+}
+
+.card-body .info:nth-child(5) {
+    grid-column: 1 / 2; /* First column, second row */
+    grid-row: 2 / 3;
+}
+
+.card-body .info:nth-child(6) {
+    grid-column: 2 / 3; /* Second column, second row */
+    grid-row: 2 / 3;
+}
+
+.card-body .info:nth-child(7) {
+    grid-column: 3 / 4; /* Third column, second row */
+    grid-row: 2 / 3;
+}
+
+.card-body .info:nth-child(8) {
+    grid-column: 4 / 5; /* Fourth column, second row */
+    grid-row: 2 / 3;
+}
+
+.card-body .info-symbol {
+    display: flex;
+    justify-content: end; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.card-body .info i {
+    margin-right: 10px;
+    color: #828282;
+    margin-bottom: 5px;
+    width: 15px;
+}
+
+.card-body .info span {
+    font-size: 8px;
+    color: #828282;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+}
+
+.card-footer .progress-bar-container {
+    flex-grow: 1;
+    height: 5px;
+    background-color: #E0E0E0;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.card-footer .progress-bar {
+    height: 100%;
+    background-color: #4F83FF;
+    width: 34%; /* Adjust based on actual progress */
+}
+
+.card-footer .progress-text {
+    font-size: 14px;
+    color: #4F83FF;
+}
+
+.profile-photo11 {
+    width: 11px !important;
+    height: 11px !important;
+    margin-right: 5px;
+}
+
+
+.card--small {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgba(245, 247, 251, 1);
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px 0px rgba(230, 230, 230, 0.4);
+    margin-bottom: 10px;
+    margin-top: 0px;
+    /* width: 320px;  */
+    height: 30px; 
+    overflow: hidden;
+}
+
+.card-header--small {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+.card-header--small img {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    align-self: center;
+}
+
+.card-header-content--small {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.card-header-actions--small {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    position: absolute;
+    top: 35%; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    transform: translateY(-50%); /* Center vertically within the container */
+}
+
+.card-header-actions--small .btn {
+    background-color: #D4FFEF;
+    color: #5EB594;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    height: 24px;
+}
+
+.card-title--small {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;    /* Hide the overflowing text */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+    max-width: 250px;    /* Adjust based on your design */
+    margin-bottom: 5px;
+}
+
+.card-subtitle--small {
+    font-size: 8px;
+    color: #828282;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+.card--medium {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgba(245, 247, 251, 1);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    /* width: 320px;  */
+    height: 67px; 
+    overflow: hidden;
+}
+
+.card-header--medium {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+.card-header--medium__thumbnail {
+    width: 65px;
+    height: 65px;
+    border-radius: 3px;
+    align-self: center;
+}
+
+.symbol {
+    width: 7.4px;
+    height: 7.4px;
+}
+
+.card-header--medium span {
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.card-header--medium--flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.card-header--medium .info {
+    margin-right: 5px; /* Adjust space between elements */
+    display: flex;
+    align-items: center; /* Align icons and text within their container */
+}
+
+.card-title--medium {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;    /* Hide the overflowing text */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+    max-width: 250px;    /* Adjust based on your design */
+    margin-bottom: 5px;
+}
+
+.card-subtitle--medium {
+    font-size: 12px;
+    color: #828282;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+
+.card-01 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgba(245, 247, 251, 1);
+    border-radius: 3px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    /* width: 320px;  */
+    height: 21px; 
+    overflow: hidden;
+}
+
+.card-01--spacebetween {
+    justify-content: space-between;
+}
+
+.card-01__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; /* Space between the text and icons */
+}
+
+.card-01__icon {
+    width: 16px; 
+    height: 16px;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-color: #4F83FF; /* Adjust the color to match your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-01__icon img {
+    width: 8px; /* Adjust based on the actual size of the icon */
+    height: 8px;
+}
+
+.card-01-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Show ellipsis if text overflows */
+    /* margin-right: 55px; */
+    flex-grow: 1; 
+    flex-basis: 0;
+    display: flex;
+    max-width: 100%;
+}
+
+.card-01-icon-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    border: 1px solid #4F83FF; /* Adjust the color to match your design */
+    /* margin-left: 50px; */
+}
+
+.card-01-icon-left img {
+    width: 9px; /* Adjust based on the actual size of the icon */
+    height: 11px
+}
+
+.card-01-icon-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+
+.card-01-icon-right img {
+    width: 6px; /* Adjust based on the actual size of the icon */
+    height: 12px;
+}
+
+.card-01--dropdown-container {
+    width: 100%;
+}
+
+.card-01--dropdown-item {
+    margin: 0px 0;
+}
+
+.card-01--dropdown-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgba(245, 247, 251, 1);
+    /* width: 320px;  */
+    height: 49px; 
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+.card-01--dropdown-header[data-level="1"] {
+    background-color: #F5F7FB !important; /* Level 1 background */
+}
+
+.card-01--dropdown-header[data-level="2"] {
+    background-color: #FAFBFF !important; /* Level 2 background */
+}
+
+.card-01--dropdown-header[data-level="3"] {
+    background-color: #FDFEFF !important;
+    ; /* Level 3 background */
+}
+
+.card-01--dropdown-header[data-level="1"] .progress-bar{
+    background-color: #4F83FF !important; 
+}
+
+.card-01--dropdown-header[data-level="2"] .progress-bar{
+    background-color: #E8A363 !important; 
+}
+
+.card-01--dropdown-header[data-level="3"] .progress-bar{
+    background-color: #5EB594 !important;
+}
+
+.card-01--dropdown-header[data-level="1"] .progress-text{
+    color: #4F83FF !important; 
+}
+
+.card-01--dropdown-header[data-level="2"] .progress-text{
+    color: #E8A363 !important; 
+}
+
+.card-01--dropdown-header[data-level="3"] .progress-text{
+    color: #5EB594 !important;
+}
+
+.card-01--dropdown-header[data-level="1"] .card-01--dropdown-header--icon{
+    background-color: #4F83FF !important; 
+}
+
+.card-01--dropdown-header[data-level="2"] .card-01--dropdown-header--icon{
+    background-color: #E8A363 !important; 
+}
+
+.card-01--dropdown-header[data-level="3"] .card-01--dropdown-header--icon{
+    background-color: #5EB594 !important;
+}
+
+.card-01--dropdown-header--content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; /* Space between the text and icons */
+}
+
+.card-01--dropdown-header--icon {
+    width: 16px; 
+    height: 16px;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-color: #4F83FF; /* Adjust the color to match your design */
+}
+
+.card-01--dropdown-header--icon img {
+    width: 8px; /* Adjust based on the actual size of the icon */
+    height: 8px;
+    margin-bottom: 5px;
+}
+
+.card-01--item-icon {
+    margin-right: 10px;
+}
+
+.card-01--item-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Show ellipsis if text overflows */
+    margin-right: 50px;
+}
+
+.card-01--item-icon-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    /* border: 1px solid #4F83FF;  */
+    margin-left: 30px;
+    background-color: #E8EFFF;
+}
+
+.card-01---item-icon-left img {
+    width: 9px; /* Adjust based on the actual size of the icon */
+    height: 11px
+}
+
+
+.card-01--dropdown-footer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 93.5%;
+}
+
+.card-01--dropdown-footer .progress-bar-container {
+    /* flex-grow: 1; */
+    height: 4px;
+    background-color: #E0E0E0;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card-01--dropdown-footer .progress-bar {
+    height: 100%;
+    background-color: #4F83FF;
+    width: 34%; /* Adjust based on actual progress */
+}
+
+.card-01--dropdown-footer .progress-text {
+    font-size: 14px;
+    color: #4F83FF;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.card-01--flex {
+    display: flex;
+    flex-direction: column;
+    width: 93.5%;
+}
+
+.card-01--flexbox-left {
+    display: flex;
+}
+
+.card-01--flexbox-right {
+    display: flex;
+    align-items: center;
+}
+
+.card-01--arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+.card-01--dropdown-content {
+    display: none;
+    /* margin-left: 20px; */
+}
+
+.card-01--dropdown-content.open {
+    display: block;
+}
+
+.card-01--dropdown-header.open .arrow-icon {
+    transform: rotate(90deg);
+}
+
+.rotate {
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease;
+}
+
+
+
+
+.card-02 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgba(245, 247, 251, 1);
+    border-radius: 3px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    height: 199px; 
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.card-02__header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.card-02__heading {
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+.card-02__body-text {
+    font-size: 12px;
+    width: 100%;
+    color: #9B9FA9;
+    margin-top: 10px;
+}
+
+.card-02 .progress-bar-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.card-02 .progress-bar-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.card-02 .progress-bar-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.card-02 .progress-label {
+    flex: 1;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.card-02 .progress-bar-wrapper {
+    /* flex: 1; */
+    position: relative;
+    height: 4px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.card-02 .progress-bar {
+    height: 100%;
+    border-radius: 4px;
+    width: 70%;
+}
+
+.card-02 .progress-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70%;
+}
+
+.card-02 .progress-percentage {
+    flex: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    display: flex;
+}
+
+.card-03 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 0 10px 0 10px;
+    background-color: white;
+    border: 1px solid rgba(245, 247, 251, 1);
+    border-radius: 1px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    height: 67px;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.card-03__header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.card-03__heading {
+    font-size: 14px;
+    flex-grow: 1;
+    display: flex;
+    color: #4F83FF;
+    font-weight: 700; 
+}
+
+.card-03__body-text {
+    font-size: 8px;
+    width: 100%;
+    color: #9B9FA9;
+    margin-top: 10px;
+    display: flex;
+}
+
+
+.card-04 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 0 10px 0 10px;
+    background-color: white;
+    border: 1px solid rgba(245, 247, 251, 1);
+    border-radius: 1px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    height: 67px;
+    overflow: hidden;
+    justify-content: flex-start;
+}

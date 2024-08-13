@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* Global Styles */
+body {
+    font-family: Sarabun, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Variables */
+:root {
+    --primary-color: #4F83FF;
+    --secondary-color: #000000;
+    --background-color: #F5F7FB;
+    --font-color-light: #ccc;
+    --font-size-large: 34px;
+    --font-size-medium: 28px;
+    --font-size-small: 24px;
+    --font-size-xsmall: 20px;
+    --border-radius: 5px;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
