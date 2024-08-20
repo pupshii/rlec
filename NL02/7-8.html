@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Simple Carousel with Animation and Edges</title>
+
+</head>
+<body>
+        <header class="header">
+            <div class="header-menu">
+                <a href="#" class="button"><img src="images/bars-regular.svg"></a>
+            </div>
+            <div class="header-buttons">
+                <a href="#" class="btn"><i class="fas fa-plus"></i></a>
+                <a href="#" class="btn"><i class="fas fa-users"></i></a>
+                <a href="#" class="btn"><img src="images/profile.jpeg" alt="Profile"></a>
+            </div>
+        </header>
+        <div class="container mt00">
+            <div class="section-header">
+                <h2 class="fzM taL mt20">All projects</h2>
+            </div>
+            <div class="search-bar mb20">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="ค้นหา">
+            </div>
+            
+            <div class="card--medium">
+                <div class="card-header--medium mb20">
+                    <img src="images/house.png" alt="Project Thumbnail" class="card-header--medium__thumbnail">
+                    <div class="col">
+                        <div class="card-subtitle--medium">EXAM001</div>
+                        <div class="card-title--medium">ตัวอย่างงานการจัดการระบบก่อสร้าง</div>
+                        <div class="card-header--medium--flex">
+                            <div class="info"><img src="images/clock-light.svg" class="symbol"></div>
+                            <div class="info"><span>23/04/20 - 23/04/20</span></div>
+                            <div class="info"><img src="images/mapmarker.svg" class="symbol"></div>
+                            <div class="info"><span>web server online</span></div>
+                            
+                        </div>
+                    </div>     
+                </div>
+            </div>
+            <div class="card-01--dropdown-container" id="card-1">
+                <div class="card-01--dropdown-item" >
+                    <div class="card-01" onclick="toggleDropdown(this)"">
+                        <div class="card-01__content">
+                            <div class="card-01__icon">
+                                <img src="images/flag-solid.svg" alt="Project Thumbnail">
+                            </div>
+                            <div class="card-01-text">ออกแบบบ้านเดี่ยว AN450024</div>
+                            <div class="card-01-icon-left">
+                                <img src="images/plus-solid.svg" alt="Add Icon">
+                            </div>
+                            <div class="card-01-icon-right">
+                                <img src="images/chevron-left-regular.svg" alt="Arrow Icon" >
+                                
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="card-01--dropdown-content" id="card-01--dropdown-container">
+                        <!-- Nested items -->                 
+                                
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-01--dropdown-container" id="card-2">
+                <div class="card-01--dropdown-item" >
+                    <div class="card-01" onclick="toggleDropdown(this)">
+                        <div class="card-01__content">
+                            <div class="card-01__icon">
+                                <img src="images/flag-solid.svg" alt="Project Thumbnail">
+                            </div>
+                            <div class="card-01-text">ออกแบบบ้านเดี่ยว AN450024</div>
+                            <div class="card-01-icon-left">
+                                <img src="images/plus-solid.svg" alt="Add Icon">
+                            </div>
+                            <div class="card-01-icon-right">
+                                <img src="images/chevron-left-regular.svg" alt="Arrow Icon" >
+                                
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="card-01--dropdown-content" id="card-01--dropdown-container">
+                        <!-- Nested items -->                 
+                                
+                    </div>
+                </div>
+            </div>
+            <button id="confirmButton" type="button" class="btn btn--small h40 mt20" onclick="nextPage('9.html')">เพิ่มขั้นตอนการทำงาน</button>
+
+        </div>
+            
+         
+    <script src="treev2.js"></script>
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                header.style.top = '-60px'; // Adjust to hide header
+            } else {
+                // Scrolling up
+                header.style.top = '0';
+            }
+            lastScrollTop = scrollTop;
+        });
+
+    </script>
+</body>
+</html>
