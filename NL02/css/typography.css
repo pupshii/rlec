@@ -1,0 +1,117 @@
+/* Title */
+.title {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+
+.subtitle {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.color-primary {
+    color: #4F83FF !important;
+}
+
+.color-secondary {
+    color: #000000 !important;
+}
+
+.color-grey {
+    color: #828282 !important;
+}
+
+.title--big {
+    font-size: 36px;
+}
+
+.title--medium {
+    font-size: 28px;
+}
+
+.title--small {
+    font-size: 24px;
+}
+
+.title--xsmall {
+    font-size: 20px;
+}
+
+.size16 {
+    font-size: 16px;
+}
+
+.size14 {
+    font-size: 14px;
+}
+
+.size12 {
+    font-size: 12px;
+}
+
+.size10 {
+    font-size: 10px;
+}
+
+.size9{
+    font-size: 9px;
+}
+
+.size8 {
+    font-size: 8px;
+}
+
+.taL {
+    text-align: left;
+}
+
+.taR {
+    text-align: right;
+}
+
+.fwN {
+    font-weight: normal;
+}
+
+.fwB {
+    font-weight: bold !important;
+}
+
+
+
+
+.fzSS {
+    font-size: 72%;
+}
+
+.fzS {
+    font-size: 86%;
+}
+
+.fzM {
+    font-size: 100%;
+}
+
+.fzL {
+    font-size: 115%;
+}
+
+.fzLL {
+    font-size: 129%;
+}
+
+.fzLLL {
+    font-size: 143%;
+}
+
+.tdU {
+    text-decoration: underline;
+}
+
+.tdN {
+    text-decoration: none;
+}
+
+
+
