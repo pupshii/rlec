@@ -1,0 +1,66 @@
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-inner {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.carousel-item {
+    flex: 0 0 70%;
+    margin: 0 2.5%;
+    box-sizing: border-box;
+}
+
+
+/* Menu Button */
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -375px; /* Hidden off-screen */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s ease;
+    z-index: 900;
+}
+
+.side-menu .side-menu__container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu img {
+    padding: 0px 40px 40px 50px;
+    width: 21px;
+    height: 19px;
+}
+
+.side-menu .text {
+    font-size: 12px;
+    font-weight: 400px;
+    color: #383C43;
+    padding: 0px 20px 40px 0px;
+}
+
+/* Open State */
+.side-menu.open {
+    left: 0;
+}
